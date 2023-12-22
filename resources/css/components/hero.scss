@@ -1,0 +1,33 @@
+@layer components {
+    .hero {
+        @apply relative h-screen;
+
+        &__background-img {
+            @apply absolute top-0 left-0 w-full h-full bg-fixed bg-cover bg-center
+        }
+
+        &__overlay {
+            @apply absolute left-0 top-0 w-full h-full bg-[#000201] text-white z-20 bg-opacity-80 lg:bg-opacity-70 flex justify-center;
+        }
+
+        &__content {
+            @apply w-full lg:w-2/4 h-full flex flex-col justify-center lg:gap-2 px-6 lg:px-0;
+        }
+
+        &__title {
+            @apply text-2xl lg:text-5xl font-bold;
+        }
+
+        &__subtitle {
+            @apply text-lg lg:text-xl font-medium;
+        }
+
+        &__description {
+            @apply text-sm lg:text-lg font-normal lg:font-light;
+        }
+
+        &__btn-resume {
+            @apply bg-blue-500 lg:w-1/4 py-2 rounded-md hover:bg-blue-600 transition duration-300 ease-in-out my-3;
+        }
+    }
+}
