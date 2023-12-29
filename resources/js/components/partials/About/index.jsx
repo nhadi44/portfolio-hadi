@@ -11,22 +11,33 @@ const About = () => {
                         company, I was given the challenge of creating a
                         website-based employee productivity system by my boss.
                     </p>
-                    <p>
+                    <p className="about__paragraph">
                         Since then, I have started to relearn the basics of web
                         programming, such as HTML, CSS, Javascript, and PHP.
                     </p>
-                    <p>
+                    <p className="about__paragraph">
                         Not only that, I also attended a bootcamp to deepen my
                         skills in the world of web development .Until now, I
                         have worked at Indocyber Global Technology as a
                         full-stack developer.
                     </p>
-                    <p>
-                        The skills that I currently master are: Javascript,
-                        ReactJS, Node.js, Laravel, and VueJS
+                    <p className="about__paragraph">
+                        The skills that I currently master are:
+                        <div className="grid grid-cols-2 mt-3 px-5">
+                            <ul className="list-disc">
+                                <li>Javascript</li>
+                                <li>ReactJs</li>
+                                <li>NodeJs</li>
+                            </ul>
+                            <ul className="list-disc">
+                                <li>Laravel</li>
+                                <li>VueJs</li>
+                                <li>NextJs</li>
+                            </ul>
+                        </div>
                     </p>
                 </div>
-                <div className="col-span-1">right</div>
+                <div className="col-span-1"></div>
             </div>
         </div>
     );

@@ -10,7 +10,7 @@ const Homepage = ({ title }) => {
             <Section classname={"h-screen"} sectionId={"hero"}>
                 <Hero />
             </Section>
-            <Section classname={"h-screen bg-[#000201]"} sectionId={"about"}>
+            <Section classname={"h-screen bg-[#000201]/90"} sectionId={"about"}>
                 <About />
             </Section>
             <Section classname={"h-screen"} sectionId={"experience"}>

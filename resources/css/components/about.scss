@@ -1,9 +1,9 @@
 @layer components {
     .about {
-        @apply text-white max-w-7xl mx-auto h-screen py-10 px-5 lg:px-8;
+        @apply text-white max-w-7xl mx-auto h-screen px-5 lg:px-8 flex flex-col justify-center;
 
         &__title {
-            @apply text-2xl lg:text-4xl font-bold mb-8;
+            @apply text-2xl lg:text-4xl font-bold mb-5;
         }
 
         &__content {
@@ -11,7 +11,7 @@
         }
 
         &__paragraph {
-            @apply text-sm lg:text-xl font-normal lg:font-normal mb-3;
+            @apply text-sm lg:text-lg text-justify font-normal lg:font-normal mb-3;
         }
     }
 }
