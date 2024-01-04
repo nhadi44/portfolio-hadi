@@ -1,7 +1,8 @@
-import DefaultLayout from "../Layout/Default";
+import DefaultLayout from "@/Layout/Default";
 import Section from "@/components/partials/Section/index.jsx";
 import Hero from "@/components/partials/Hero/index.jsx";
 import About from "@/components/partials/About/index.jsx";
+import Experience from "@/components/partials/Experience";
 import PropTypes from "prop-types";
 
 const Homepage = ({ title }) => {
@@ -10,11 +11,20 @@ const Homepage = ({ title }) => {
             <Section classname={"h-screen"} sectionId={"hero"}>
                 <Hero />
             </Section>
-            <Section classname={"h-screen bg-[#000201]/90"} sectionId={"about"}>
+            <Section
+                classname={"lg:h-screen bg-[#000201]/90"}
+                sectionId={"about"}
+            >
                 <About />
             </Section>
-            <Section classname={"h-screen"} sectionId={"experience"}>
-                Experience
+            <Section
+                classname={"h-screen bg-[#000201]/80"}
+                sectionId={"experience"}
+            >
+                <Experience />
+            </Section>
+            <Section classname={"h-screen"} sectionId={"projects"}>
+                Projects
             </Section>
         </DefaultLayout>
     );

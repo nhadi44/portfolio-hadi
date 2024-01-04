@@ -1,17 +1,21 @@
 @layer components {
     .about {
-        @apply text-white max-w-7xl mx-auto h-screen px-5 lg:px-8 flex flex-col justify-center;
+        @apply text-white max-w-7xl lg:h-screen mx-auto py-7 md:py-10 px-5 md:px-8 lg:px-8 flex flex-col justify-center ;
 
         &__title {
-            @apply text-2xl lg:text-4xl font-bold mb-5;
+            @apply text-2xl lg:text-2xl xl:text-4xl font-bold mb-5;
         }
 
         &__content {
-            @apply grid grid-cols-2 gap-10;
+            @apply grid grid-rows-1 md:grid-cols-2 gap-10;
         }
 
         &__paragraph {
-            @apply text-sm lg:text-lg text-justify font-normal lg:font-normal mb-3;
+            @apply text-sm lg:text-base xl:text-lg text-justify font-normal lg:font-normal mb-3;
+        }
+
+        &__list {
+            @apply grid grid-cols-2 mt-3 px-5 text-sm lg:text-lg font-normal;
         }
     }
 }

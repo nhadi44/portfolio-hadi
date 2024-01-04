@@ -1,0 +1,9 @@
+@layer components {
+    .experience {
+        @apply text-white max-w-7xl mx-auto h-screen py-14 px-5 lg:px-8;
+
+        &__title {
+            @apply text-2xl lg:text-4xl font-bold mb-5;
+        }
+    }
+}

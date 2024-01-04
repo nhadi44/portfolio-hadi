@@ -23,21 +23,30 @@ const About = () => {
                     </p>
                     <p className="about__paragraph">
                         The skills that I currently master are:
-                        <div className="grid grid-cols-2 mt-3 px-5">
-                            <ul className="list-disc">
-                                <li>Javascript</li>
-                                <li>ReactJs</li>
-                                <li>NodeJs</li>
-                            </ul>
-                            <ul className="list-disc">
-                                <li>Laravel</li>
-                                <li>VueJs</li>
-                                <li>NextJs</li>
-                            </ul>
-                        </div>
                     </p>
+                    <div className="about__list">
+                        <ul className="list-disc">
+                            <li>Javascript</li>
+                            <li>ReactJs</li>
+                            <li>NodeJs</li>
+                        </ul>
+                        <ul className="list-disc">
+                            <li>Laravel</li>
+                            <li>VueJs</li>
+                            <li>NextJs</li>
+                        </ul>
+                    </div>
                 </div>
-                <div className="col-span-1"></div>
+                <div className="col-span-1 px-10">
+                    <div className="w-full lg:w-3/4 xl:w-2/4 relative">
+                        <div className="bg-slate-900 absolute left-0 top-0 w-full h-full bg-opacity-10 hover:bg-opacity-0 transition-all duration-200 ease-in"></div>
+                        <img
+                            src="/assets/images/foto.jpg"
+                            alt="profile-foto"
+                            className="rounded-md"
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     );
